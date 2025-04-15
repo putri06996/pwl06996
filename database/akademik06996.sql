@@ -1,6 +1,6 @@
 /*
 SQLyog Community v13.1.5  (64 bit)
-MySQL - 10.4.10-MariaDB : Database - pwlgenap2019-akademik
+MySQL - 10.4.10-MariaDB : Database - akademik06996
 *********************************************************************
 */
 
@@ -12,9 +12,9 @@ MySQL - 10.4.10-MariaDB : Database - pwlgenap2019-akademik
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`pwlgenap2019-akademik` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`akademik06996` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 
-USE `pwlgenap2019-akademik`;
+USE `akademik06996`;
 
 /*Table structure for table `dosen` */
 
@@ -245,6 +245,30 @@ insert  into `user`(`iduser`,`username`,`password`,`status`) values
 (4,'tu','b6b4ce6df035dcfaa26f3bc32fb89e6a','tu'),
 (5,'llg','b8ae57911c26ed8313cd09a33f7f43f5','admin'),
 (7,'A12.2016.02898','f8057ac11cd7a20c6bf238c4bf239c1c','mhs');
+
+/*Table structure for table `gambar` */
+
+DROP TABLE IF EXISTS `gambar`;
+
+CREATE TABLE `gambar` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama_file` varchar(255) NOT NULL,
+  `lokasi_file` varchar(255) NOT NULL,
+  `uploaded_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `gambar_thumbnail` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `filename` varchar(255) NOT NULL,
+  `filepath` varchar(255) NOT NULL,
+  `thumbpath` varchar(255) NOT NULL,
+  `width` int(11) DEFAULT NULL,
+  `height` int(11) DEFAULT NULL,
+  `uploaded_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

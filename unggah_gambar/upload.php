@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "pwlgenap2019-akademik");
+$conn = new mysqli("localhost", "root", "", "akademik06996");
 
 if ($conn->connect_error) {
   die("Koneksi gagal: " . $conn->connect_error);
