@@ -79,15 +79,15 @@
                 </ul> 
             </nav> 
      <?php 
-            $sql = "SELECT * FROM gambar_thumbnail ORDER BY uploaded_at DESC"; 
-            $result = $conn->query($sql); 
+            //$sql = "SELECT * FROM gambar_thumbnail ORDER BY uploaded_at DESC"; 
+            //$result = $conn->query($sql); 
                 if ($result->num_rows > 0) { 
                 while($row = $result->fetch_assoc()) { 
                     echo " 
                    <div class='col-12 col-sm-6 col-md-4 col-lg-3'> 
                         <div class='card shadow-sm h-100'> 
-                            <img src='{$row['thumbpath']}' class='card-img-top img-thumbnail' alt='Thumbnail' data-bs-toggle='modal' data-bs 
-                            target='#modal{$row['id']}'> 
+                            <img src='{$row['thumbpath']}' class='card-img-top img-thumbnail' alt='Thumbnail' data-bs-toggle='modal' data-bs
+target='#modal{$row['id']}'> 
                             <div class='card-body'> 
                             <p class='card-text'><strong>Ukuran:</strong> {$row['width']}x{$row['height']}</p> 
                             <a href='{$row['filepath']}' class='btn btn-sm btn-primary' target='_blank'>Lihat Asli</a> 
