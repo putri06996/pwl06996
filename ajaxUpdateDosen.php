@@ -3,13 +3,12 @@
 <head>
 	<title>Sistem Informasi Akademik::Daftar Dosen</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap533/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/styleku.css">
-	<script src="bootstrap533/jquery/3.3.1/jquery-3.3.1.js"></script>
-	<script src="bootstrap533/js/bootstrap.js"></script>
-	<!-- Use fontawesome 5-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap533/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styleku.css">
+    <script src="bootstrap533/jquery/3.3.1/jquery-3.3.1.js"></script>
+    <script src="bootstrap533/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 	<script>
 		/*function cetak(hal) {
 		  var xhttp;
