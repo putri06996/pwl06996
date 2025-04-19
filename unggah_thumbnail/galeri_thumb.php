@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en"> 
     <head> 
         <meta charset="UTF-8"> 
-        <title>Galeri Gambar Responsive</title> 
+        <title>Upload Gambar + Thumbnail</title> 
         <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
         rel="stylesheet"> 
